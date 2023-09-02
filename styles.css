@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #8e9eb1;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+section{
+  margin: 0 10px 0 10px;
+}
+
+.texto_desencriptado, .important_text, .buttons{
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.buttons{
+  padding: 30px;
+}
+
+.texto_desencriptado{
+  outline: none;
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  font-size: 30px;
+  border-color: transparent;
+  background-color: rgb(63, 34, 192);
+  border-radius: 20px;
+  padding: 20px;
+  resize: none;
+  text-transform: lowercase;
+}
+
+.important_text p{
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+.important_text, .buttons{
+  translate: 1px -39px;
+  background: transparent;
+}
+
+.encriptado_btn{
+  border: transparent;
+  background-color:gainsboro;
+  font-size: 30px;
+  border-radius: 24px;
+  cursor: pointer;
+  height: 70px;
+  width: 300px;
+  margin-right: 4px;
+}
+
+.desencriptado_btn{
+  border: transparent;
+  background-color: ghostwhite;
+  font-size: 30px;
+  border-radius: 24px;
+  cursor: pointer;
+  height: 70px;
+  width: 300px;
+  margin-left: 4px;
+}
+
+.encriptado_btn:hover, .desencriptado_btn:hover, .copia_btn:hover, .borrar_btn{
+  box-shadow: .5rem .5rem 1rem whitesmoke,
+  -.5rem -.5rem 1rem #ccc;
+}
+
+.desencriptado_btn:active, .copia_btn:active, .borrar_btn{
+  box-shadow: inset  .2rem 1rem rgb(157, 157, 168),
+  inset -.2rem -.2rem 1rem #beb6b6;
+}
+
+.encriptado_btn:active{
+  box-shadow: inset  .2rem 1rem rgb(139, 121, 121),
+  inset -.2rem -.2rem 1rem #8f8888;
+}
+
+.encriptado_btn, .desencriptado_btn, .copia_btn, .borrar_btn{
+  transition: all 1s ease;
+  box-shadow: .5rem .5rem 1rem #8f8888,
+  -.5rem -.5rem 1rem rgb(209, 198, 198);
+}
+
+.texto_encriptado{
+  outline: none;
+  width: 476px;
+  height: 438px;
+  font-size: 30px;
+  border-color: transparent;
+  background-color: rgb(63, 34, 192);
+  border-radius: 20px;  
+  padding: 20px;
+  resize: none;
+  text-transform: lowercase;
+  background-image: url(img/muñeco.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:auto;
+}
+
+.copia_btn{
+  border: transparent;
+  background-color: rgb(79, 79, 168);
+  font-size: 30px;
+  border-radius: 24px;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  translate: 0 -81px;
+}
+
+.borrar_btn{
+  border: transparent;
+  background-color: rgb(79, 79, 168);
+  font-size: 30px;
+  border-radius: 24px;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  translate: 0 -81px;
+}
+
+.contenedor_para_copia, .texto_encriptado{
+  display: flex;
+  justify-content: center;
+  padding-right: 30px;
+}
